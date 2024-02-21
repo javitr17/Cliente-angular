@@ -1,1 +1,9 @@
 <p>home works!</p>
+
+<!-- {{ this.proyecto.nombre }} - {{ this.proyecto.presupuesto }} -->
+
+<ul>
+    <li *ngFor="let p of this.arrayProyecto; let i = index">
+        {{i+1}}. {{p.nombre}} - {{ p.presupuesto }}
+    </li>
+</ul>

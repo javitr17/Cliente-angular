@@ -1,1 +1,18 @@
 <p>quienes-somos works!</p>
+
+
+<div class="btn-group">
+    <input type="button" class=" btn btn-secondary" value="Get" (click)="get3()"/>
+    
+    <input type="text" placeholder="Introduce ID" name="id" [(ngModel)]="inputIdGet"/>
+    <input type="button" class=" btn btn-secondary" value="Get" (click)="get3()"/>
+    <input type="button" class=" btn btn-secondary" value="Post" (click)="post()"/>
+    <input type="button" class=" btn btn-secondary" value="Put" (click)="put()"/>
+    <input type="button" class=" btn btn-secondary" value="Patch" (click)="patch()"/>
+    <input type="button" class=" btn btn-secondary" value="Delete" (click)="delete()"/>
+
+</div>
+
+<pre>
+    {{ this.resultadoPeticion | json}}
+</pre>
